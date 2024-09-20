@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
       - name: GitHub Action example
         run: echo "Hello world!"
       - name: Get Date
