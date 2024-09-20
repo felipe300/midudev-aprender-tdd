@@ -1,0 +1,16 @@
+# GITHUB ACTIONS
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: GitHub Action example
+      run: echo "Hello world!"
