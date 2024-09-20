@@ -4,13 +4,16 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: GitHub Action example
-      run: echo "Hello world!"
+      - name: GitHub Action example
+        run: echo "Hello world!"
+      - name: Get Date
+        run: date
+      - name: Show the current directory
+        run: ls -la
